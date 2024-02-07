@@ -1,20 +1,25 @@
-pipeline{
+pipeline
+{
 
 agent any
 
-tools{
-maven 'maven'
+tools
+	{
+	maven 'maven3.8.2'
+	}
 
-}
+/*
+triggers
+	{
+	pollSCM('* * * * *')
+	}
+*/
 
-triggers{
-pollSCM('* * * * *')
-}
-
-options{
+options
+	{
 timestamps()
-buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5'))
-}
+	buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5'))
+	}
 
 stages
 {
@@ -36,6 +41,7 @@ stages
   }
 }
 
+/*
  stage('ExecuteSonarQubeReport')
 {
   steps
@@ -62,7 +68,7 @@ stage('DeployAppIntoTomcat')
   	}
   	}
 }
-  
+  */
 }//Stages Closing
 
 post{
