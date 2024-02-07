@@ -2,18 +2,18 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<groupId>com.mt</groupId>
+	<groupId>com.vsrit</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	
 	<name>maven-web-application</name>
 
-	<description>Maven Web Project for Java Project</description>
+	<description>Maven Web Application for Java Project</description>
 
 	<organization>
-		<name>Mithun Technologies</name>
-		<url>http://mithuntechnologies.com/</url>
+		<name>VSRIT Solutions</name>
+		<url>http://vsritsolutions.com/</url>
 	</organization>
 
 	<properties>
@@ -21,7 +21,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://3.88.22.191:9000/</sonar.host.url>
+		<sonar.host.url>http://3.84.45.200:9000/</sonar.host.url>
 		<sonar.login>sonarqube</sonar.login>
 		<sonar.password>sonarqube</sonar.password> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -97,14 +97,14 @@
 	
 	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://18.234.165.157:8081/repository/Maven-Repo-1/</url>
+	      <name>VSRIT Solutions Releases Nexus Repository</name>
+	      <url>http://3.84.61.232:8081/repository/Maven2-Hosted-Repo1/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://18.234.165.157:8081/repository/Maven-Repo-1/</url>
+	      <name>VSRIT Solutions Snapshot Nexus Repository </name>
+	      <url>http://3.84.61.232:8081/repository/Maven2-Hosted-Repo1/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
