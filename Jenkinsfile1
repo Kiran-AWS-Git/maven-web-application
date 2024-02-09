@@ -28,7 +28,7 @@ stages
   {
     steps
 	{
-    git branch: 'development', url: 'https://github.com/Kiran-AWS-Git/maven-web-application.git'
+    git branch: 'development', url: 'https://github.com/Kiran-AWS-DevOps/maven-web-application.git'
 	
 	}
   }
